@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script id="versionizer" defer src="file:///C:/Users/ChristianTeMaari/Desktop/versionizer.js"></script>
+	<title>Document</title>
+	<script>
+		document.getElementById('versionizer').onload = () => {
+			load("script", { src: "script.js", defer: true })
+			loadMultiple({ tag: "link", href: "style.css" })
+			loadMultiple([ { tag: "script", src: "second.js" } ])
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>
